@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+        
+<link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
+<link  id="hostStyle" rel="stylesheet" href="css/styles.css"/>
+
+<title></title>
+</head>
+
+<body class="hostElt">
+
+    <div id="content">        
+        
+        <div>                
+            <button id="getObjects" class="topcoat-button--large hostFontSize">Call ExtendScript</button>                
+        </div> 
+        <button id="reload" class="topcoat-button--large hostFontSize">reload</button>  
+        <button id="getImg" class="topcoat-button--large hostFontSize">get images</button>
+         <button id="colorData" class="topcoat-button--large hostFontSize">color data</button>
+    </div>
+    <h3>item List</h3>
+    <table id="itemList"></table>
+    <div id="imagesList">
+        <h3>Placed images</h3>
+        <table id="placedimagesList"></table>
+        <h3>embed images</h3>
+        <table id="embedimagesList"></table>
+    </div>
+    <h3>color list</h3>
+    <table id="colorList"></table>
+    
+    <!-- These are debugging shortcuts.  Class debuglink items only appear in debug mode  -->
+    <span class="debuglink" id="reload">Reload</span>
+    <span class="debuglink" id="debug">Debug</span>
+    <span class="debuglink" id="sources">Sources</span>
+    
+    <script src="js/libs/CSInterface.js"></script>
+    <script src="js/libs/jquery-2.0.2.min.js"></script>
+
+    <script src="js/themeManager.js"></script>
+    <script src="js/main.js"></script>
+
+        
+</body>
+</html>
